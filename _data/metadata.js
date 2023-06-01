@@ -1,5 +1,5 @@
 module.exports = {
-	title: "Scattered Blog",
+	title: "scattered.blog",
 	url: "https://scattered.blog/",
 	language: "en",
 	description: "Rizaldi Martaputra's Personal Site/Blog",
