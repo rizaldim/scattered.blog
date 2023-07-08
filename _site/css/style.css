@@ -1,0 +1,78 @@
+html {font-size: 100%;} /*16px*/
+
+:root {
+	--ratio: 1.25;
+	--size0: 1rem;
+	--size1: calc(var(--ratio) * var(--size0));
+	--size2: calc(var(--ratio) * var(--size1));
+	--size3: calc(var(--ratio) * var(--size2));
+	--size4: calc(var(--ratio) * var(--size3));
+	--size5: calc(var(--ratio) * var(--size4));
+
+	--size-1: calc(var(--size0) / var(--ratio));
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'IBM Plex Sans',system-ui,-apple-system,sans-serif;
+}
+body {
+	font-family: Barlow,system-ui,-apple-system,sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: var(--size5);
+}
+
+h2 {font-size: var(--size4);}
+
+h3 {font-size: var(--size3);}
+
+h4 {font-size: var(--size2);}
+
+h5 {font-size: var(--size1);}
+
+small {font-size: var(--size-1);}
+
+header {
+	margin: 0;
+}
+
+main {
+	padding: 1em;
+}
+
+p {
+	max-width: 80ch;
+}
+
+.main-header {
+	display: flex;
+	align-items: baseline;
+
+	border-bottom: 2px solid black;
+
+	& .home {
+		font-size: var(--size2);
+		background-color: black;
+		color: white;
+
+		padding: .5em;
+	}
+
+	& a {
+		text-decoration: none;
+	}
+
+	& a:not(.home) {
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
