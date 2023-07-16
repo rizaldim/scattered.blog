@@ -1,0 +1,17 @@
+<header class="main-header cluster">
+	{% if slug == 'index' %} 
+		<a class="current" href="/">{{ site.name }}</a>
+	{% else %}
+		<a href="/">{{ site.name }}</a>
+	{% endif %}
+
+	{% for item in site.menu %}
+		{% if slug == item.text %} 
+			<a class="current" href="{{ item.path }}" > {{ item.text }} </a>
+		{% else %}
+			<a href="{{ item.path }}" > {{ item.text }} </a>
+		{% endif %}
+	{% endfor %}
+
+</header>
+

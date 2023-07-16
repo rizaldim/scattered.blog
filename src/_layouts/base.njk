@@ -9,15 +9,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/elements/headings.css">
+	<link rel="stylesheet" href="/css/utils/cluster.css">
+	<link rel="stylesheet" href="/css/components/main-header.css">
 
 	<title>{{ title }} - {{ site.name }}</title>
 </head>
 
 <body>
-	<header class="main-header cluster">
-		<a class="home" href="/">{{ site.name }}</a>
-		<a href="/about/">about</a>
-	</header>
+	{% include "./header.njk" %}
+
 	<main>
 		{{ content | safe }}
 	</main>
