@@ -1,9 +1,0 @@
-.cluster {
-	--space-horizontal: 1rem;
-	--space-vertical: 0;
-
-	display: flex;
-	flex-wrap: wrap;
-	gap: var(--space-vertical) var(--space-horizontal);
-}
-

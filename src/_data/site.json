@@ -1,9 +1,0 @@
-{
-	"name": "scattered.blog",
-	"menu": [
-		{ "path": "/posts", "text": "posts" },
-		{ "path": "/about", "text": "about" },
-		{ "path": "/faq", "text": "faq" },
-		{ "path": "/hire-me", "text": "hire-me" }
-	]
-}
